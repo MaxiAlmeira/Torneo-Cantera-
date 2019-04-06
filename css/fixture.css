@@ -1,0 +1,166 @@
+body {
+  animation: aparecer 1s;
+}
+
+.borde-prueba{
+  border: 1px solid black;
+  min-height: 50px;
+}
+
+.pantalla_de_inicio{
+  height: 50vh;
+  background-image: url(../imagenes/HORIZONTALES/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:bottom;
+  box-shadow: 1px 1px 10px black;
+}
+
+.sub-caja1 {
+  width: 100%;
+  margin: auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  justify-content: center;
+}
+
+.sub-caja2 {
+  width: 75%;
+  min-height: 80vh;
+  /* border: 2px solid black; */
+  margin-top: 10px;
+  margin-bottom: 25px;
+  box-shadow: 1px 1px 1px #CACACA, -1px -1px 1px #CACACA;
+  border-radius: 0px 10px 10px 10px;
+}
+
+@media screen and (max-width:800px) {
+  .sub-caja2{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .sub-caja2{
+    width: 97%;
+  }
+  .pantalla_de_inicio{
+    height: 25vh;
+    background-image: url(../imagenes/HORIZONTALES/banner.jpg);
+  }
+}
+
+#tituloFixture {
+  background: #19823B;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  width: 200px;
+  height: 40px;
+  box-shadow: 0.2px 0.2px 5px black;
+  opacity: 1;
+  border-radius: 2px;
+  margin-top: -25px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  animation: miAnimacion 1s;
+
+}
+
+@-webkit-keyframes miAnimacion {
+  0%{
+    transform: translateY(300%);
+  }50%{
+    transform: translateY(-5%);
+  }100%{
+    transform: translateY(-0%);
+  }
+}
+
+@-webkit-keyframes aparecer {
+  from{
+    opacity: 0.5;
+  }to{
+    opacity: 1;
+  }
+}
+
+/* PROGRAMACION PARA TABLAS */
+
+.fechaFixture{
+  padding: 5px;
+  font-family: 'Raleway', sans-serif;
+  background: #E5E5E5;
+
+  animation: miAnimacion 1s;
+}
+.encabezadoFixture {
+  background: rgba(25,130,59,0.8);
+  box-shadow: 0.2px 0.2px 5px black;
+  padding: 10px 0px;
+}
+
+.encabezadoFixture p {
+  color: white;
+  font-size: bolder;
+}
+
+.partido {
+  padding: 10px 0px;
+}
+.centrado{
+  text-align:center;
+}
+.a-la-derecha {
+  text-align: right;
+}
+
+.a-la-izquierda {
+  text-align: left;
+}
+
+.nombreEquipos{
+  font-weight: bolder !important;
+  padding: 0px;
+}
+
+.resultado {
+  color: orangered;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: Arial;
+}
+
+.goleadores {
+  font-size: 11px;
+  padding: 5px 0px;
+}
+
+
+.fechaFixture .partido:nth-child(even){
+  background-color: white;
+}
+
+@media screen and (max-width:500px) {
+  .fechaFixture {
+  padding: 0px;
+  }
+
+  .partido {
+    padding: 10px 0px;
+  }
+
+  .resultado{
+    font-size: 15px;
+  }
+}

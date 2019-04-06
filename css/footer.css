@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+ footer {
+  min-height: 200px;
+  width: 100%;
+  background-color: black;
+  box-sizing: border-box;
+
+  display: -webkit-flex;
+  display: -ms-display;
+  display: flex;
+}
+footer .pieLogo {
+  height: 200px;
+  min-width: 200px;
+  width: 20%;
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+footer .pieLogo img {
+height: 150px;
+}
+
+.pieTexto {
+  padding: 50px;
+  color: white;
+  width: 60%;
+  min-width: 550px;
+}
+
+.pieTexto p {
+ margin-top: 10px;
+ font-family:   'Arial', sans-serif;
+ font-weight: 100;
+ font-size: 1em;
+ font-family: 'Raleway', sans-serif;
+}
+
+.pieTexto a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #0E7CC8;
+}
+
+.iconos {
+  width: 20%;
+  display: -webkit-flex;
+  display: -ms-display;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconos a {
+  display: inline-block;
+  font-size:20px;
+  padding: 10px;
+  margin: 5px;
+  color: white;
+  opacity: 0.8;
+  border: solid 2px white;
+  border-radius: 35px;
+}
+
+.iconos a:hover {
+  background: white;
+  border: solid 2px black;
+  color: black;
+}
+
+.iconos a:active {
+  opacity: 1;
+  border: solid 2px white;
+}
+@media screen and (max-width:900px) and (min-width:701px) {
+
+  footer {
+   display: -webkit-flex;
+   display: -ms-display;
+   display: flex;
+
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+ }
+ footer .pieLogo {
+
+ }
+ footer .pieLogo img {
+   height: 200px;
+
+ }
+
+ .pieTexto {
+   padding: 0px;
+   color: white;
+   width: 60%;
+   min-width: 550px;
+ }
+
+ .pieTexto p {
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: 1em;
+ }
+
+ .pieTexto a {
+   text-decoration: none;
+   font-weight: bolder;
+   color: #0E7CC8;
+ }
+
+ .iconos {
+   width: 20%;
+   padding: 50px;
+   display: -webkit-flex;
+   display: -ms-display;
+   display: flex;
+
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .iconos a {
+   display: inline-block;
+   font-size:20px;
+   padding: 10px;
+   margin: 5px;
+   color: white;
+   opacity: 0.8;
+   border: solid 2px white;
+   border-radius: 35px;
+ }
+}
+
+@media screen and (max-width:700px) {
+  footer {
+   display: -webkit-flex;
+   display: -ms-display;
+   display: flex;
+
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+ }
+ footer .pieLogo {
+   height: 200px;
+   min-width: 200px;
+   width: 20%;
+ }
+ footer .pieLogo img {
+   height: 200px;
+
+ }
+
+ .pieTexto {
+   padding: 0px;
+   color: white;
+   width: 60%;
+   min-width: 250px;
+ }
+
+ .pieTexto p {
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: 0.8em;
+ }
+
+ .pieTexto a {
+   text-decoration: none;
+   font-weight: bolder;
+   color: #0E7CC8;
+ }
+
+ .iconos {
+   width: 20%;
+   padding: 50px;
+   display: -webkit-flex;
+   display: -ms-display;
+   display: flex;
+
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .iconos a {
+   display: inline-block;
+   font-size:20px;
+   padding: 10px;
+   margin: 5px;
+   color: white;
+   opacity: 0.8;
+   border: solid 2px white;
+   border-radius: 35px;
+ }
+}
+
+@media screen and (max-device-width:900px) and (min-width:701px) {
+
+  footer {
+   display: -webkit-flex;
+   display: -ms-display;
+   display: flex;
+
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+ }
+ footer .pieLogo {
+   height: 200px;
+   min-width: 200px;
+   width: 20%;
+ }
+ footer .pieLogo img {
+   height: 200px;
+
+ }
+
+ .pieTexto {
+   padding: 0px;
+   color: white;
+   width: 60%;
+   min-width: 550px;
+ }
+
+ .pieTexto p {
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: 1em;
+ }
+
+ .pieTexto a {
+   text-decoration: none;
+   font-weight: bolder;
+   color: #0E7CC8;
+ }
+
+ .iconos {
+   width: 20%;
+   padding: 50px;
+   display: -webkit-flex;
+   display: -ms-display;
+   display: flex;
+
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .iconos a {
+   display: inline-block;
+   font-size:20px;
+   padding: 10px;
+   margin: 5px;
+   color: white;
+   opacity: 0.8;
+   border: solid 2px white;
+   border-radius: 35px;
+ }
+}
+
+@media screen and (max-device-width:700px) {
+  footer {
+   display: -webkit-flex;
+   display: -ms-display;
+   display: flex;
+
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+ }
+ footer .pieLogo {
+   height: 200px;
+   min-width: 200px;
+   width: 20%;
+ }
+ footer .pieLogo img {
+   height: 200px;
+
+ }
+
+ .pieTexto {
+   padding: 0px;
+   color: white;
+   width: 60%;
+   min-width: 250px;
+ }
+
+ .pieTexto p {
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: 0.8em;
+ }
+
+ .pieTexto a {
+   text-decoration: none;
+   font-weight: bolder;
+   color: #0E7CC8;
+ }
+
+ .iconos {
+   width: 20%;
+   padding: 50px;
+   display: -webkit-flex;
+   display: -ms-display;
+   display: flex;
+
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .iconos a {
+   display: inline-block;
+   font-size:20px;
+   padding: 10px;
+   margin: 5px;
+   color: white;
+   opacity: 0.8;
+   border: solid 2px white;
+   border-radius: 35px;
+ }
+}

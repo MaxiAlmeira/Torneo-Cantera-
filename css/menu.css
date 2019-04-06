@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #D7D7D7;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+
+}
+
+.menu-barra {
+  display: none;
+}
+
+header nav {
+  width: 100%;
+  height: 100%;
+  float: right;
+  /* background-color: #1C7DCB; */
+  background: rgba(0,0,0,0.9);
+  box-shadow: 0px 0.1px 5px black;
+  transition: box-shadow 0.3s;
+}
+
+header nav:hover {
+  box-shadow: 0px 0.5px 20px black;
+}
+
+header nav ul {
+  float:right;
+  height: 100%;
+  width: 90%;
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+header nav ul li{
+  height: 100%;
+  padding: 0px 12px;
+  display: inline-block;
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  flex-wrap: nowrap;
+  align-items:center;
+  transition: background 0.3s;
+
+}
+
+header nav ul li a {
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  flex-wrap: nowrap;
+  align-items:center;
+
+}
+
+header nav ul li:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+header nav ul li a:hover {
+  color: rgba(255, 255, 255, 1);
+
+}
+
+@media screen and (max-width:800px) {
+
+  header {
+    background-color: inherit;
+  }
+  header nav {
+    height: 80vh;
+    width: 80%;
+    left: -100%;
+    float: none;
+    position: fixed;
+  }
+
+  header nav ul {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  header nav ul li {
+    width: 85%;
+    height: 10%;
+    padding-left: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  header nav ul li a{
+    width: 100%;
+  }
+  .menu-barra{
+    display: block;
+    width: 100%;
+    float: right;
+    position: fixed;
+  }
+
+  .menu-barra p {
+    float:right;
+    color: white;
+    font-size: 25px;
+    padding: 15px;
+
+  }
+  .menu-barra p span {
+    /* background-color: rgba(28,125,203,0.5); */
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 7px;
+    border-radius: 70px;
+    font-weight: bold;
+  }
+
+  .menu-barra p span:hover {
+    background-color: rgba(203,203,203,0.2);
+  }
+
+  .menu-barra p span:active{
+    background-color: rgba(203,203,203,0.5);
+  }
+}

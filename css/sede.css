@@ -1,0 +1,109 @@
+body {
+  animation: aparecer 1s;
+}
+
+@-webkit-keyframes aparecer {
+  from{
+    opacity: 0.5;
+  }to{
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes miAnimacion {
+  0%{
+    transform: translateX(300%);
+  }50%{
+    transform: translateX(-5%);
+  }100%{
+    transform: translateX(-0%);
+  }
+}
+.sub-caja1 {
+  width: 100%;
+  margin-top: 60px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  justify-content: center;
+  animation: miAnimacion 1s;
+}
+
+.pantalla_de_inicio{
+  height: 50vh;
+  background-image: url(../imagenes/HORIZONTALES/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:bottom;
+  box-shadow: 1px 1px 10px black;
+}
+
+.sub-caja2 {
+  width: 75%;
+  min-height: 80vh;
+  /* border: 2px solid black; */
+  margin-top: -50px;
+  margin-bottom: 25px;
+  box-shadow: 1px 1px 1px #CACACA, -1px -1px 1px #CACACA;
+  border-radius: 0px 10px 10px 10px;
+}
+
+@media screen and (max-width:700px) {
+  .sub-caja2 {
+    width: 95%;
+  }
+}
+
+#tituloSede {
+  background: #19823B;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  color: white;
+  width: 200px;
+  height: 40px;
+  box-shadow: 0.2px 0.2px 5px black;
+  opacity: 1;
+  border-radius: 2px;
+  margin-top: -25px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+}
+
+.sub-caja2 h3 {
+  font-family:  'Raleway', sans-serif;
+  font-weight: 200;
+  text-shadow: 1px 1px rgba(0,0,0,0.2);
+  padding-bottom: 30px;
+  padding-left: 30px;
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .sub-caja2 h3 {
+    font-size: 15px;
+  }
+  .pantalla_de_inicio{
+    height: 25vh;
+    background-image: url(../imagenes/HORIZONTALES/banner.jpg);
+  }
+}
+
+.sub-caja2 iframe{
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  transition: box-shadow 0.5s;
+}
+
+.sub-caja2 iframe:hover{
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.6);
+}

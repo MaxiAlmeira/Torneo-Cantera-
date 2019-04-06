@@ -1,0 +1,129 @@
+.borde-prueba {
+  border: 1px solid black;
+  min-height: 50px;
+}
+
+.pantalla_de_inicio {
+  height: 50vh;
+  background-image: url(../imagenes/HORIZONTALES/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:bottom;
+  box-shadow: 1px 1px 10px black;
+}
+
+.sub-caja1 {
+  width: 100%;
+  margin: auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  justify-content: center;
+}
+
+.sub-caja2 {
+  width: 75%;
+  min-height: 80vh;
+  /* border: 2px solid black; */
+  margin-top: 10px;
+  margin-bottom: 25px;
+  box-shadow: 1px 1px 1px #CACACA, -1px -1px 1px #CACACA;
+  border-radius: 0px 10px 10px 10px;
+}
+
+@media screen and (max-width:700px) {
+  .sub-caja2 {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .sub-caja2 {
+    width: 95%;
+  }
+}
+
+#tituloEquipos {
+  background: #19823B;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  color: white;
+  width: 200px;
+  height: 40px;
+  box-shadow: 0.2px 0.2px 5px black;
+  opacity: 1;
+  border-radius: 2px;
+  margin-top: -25px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+}
+
+table {
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  border-collapse:collapse;
+  background: #CACACA;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2),
+              -1px -1px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 60px;
+
+  animation: miAnimacion 1s;
+}
+
+th,td {
+  height: 10px !important;
+  width: 2px !important;
+  padding: 10px !important;
+  margin: 0px !important;
+  font-family: 'Raleway', sans-serif;
+
+  text-align: center !important;
+}
+
+thead:first-child {
+  background: rgba(25,130,59,0.7);
+}
+
+@media screen and (max-width:500px) {
+  th,td {
+    font-size: 13px;
+  }
+  table {
+    width: 100%;
+  }
+}
+
+
+td {
+    color: rgba(0, 0, 0, 0.8);
+
+}
+
+.blackLetter {
+  font-weight: bolder;
+}
+
+.tituloTablas {
+  font-family: 'Raleway', sans-serif;
+  padding: 10px;
+  font-size: 25px;
+  margin: 15px auto;
+  background: rgba(25,130,59,0.7);
+  border-radius: 4px;
+  text-align: center;
+  border: 0.1px gray solid;
+
+
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2),
+              -1px -1px 5px rgba(0, 0, 0, 0.2);
+}

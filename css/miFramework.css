@@ -1,0 +1,21 @@
+.al_final_de_la_fila {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content:flex-end;
+  align-items: center;
+}
+
+.centrado_ver_y_hor {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+}

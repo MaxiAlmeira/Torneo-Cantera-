@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* DEFINIMOS LAS DISTINTAS IMAGENES DE FONDO PARA LOS DISTINTOS DISPOSITIVOS */
+.pantalla_de_inicio {
+  height: 80vh;
+  background-image: url(../imagenes/HORIZONTALES/1440x900/fondoLaptopHlite1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:top;
+  box-shadow: 1px 1px 10px black;
+  animation: aparecer 1s;
+}
+
+.sub-caja1 {
+  width: 100%;
+  margin: auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  justify-content: center;
+
+}
+
+@-webkit-keyframes miAnimacion {
+  0%{
+    transform: translateY(300%);
+  }50%{
+    transform: translateY(-15%);
+  }100%{
+    transform: translateY(-0%);
+  }
+}
+
+@-webkit-keyframes miAnimacion2 {
+  0%{
+    transform: translateY(300%);
+  }100%{
+    transform: translateY(-0%);
+  }
+}
+
+@-webkit-keyframes aparecer {
+  from{
+    opacity: 0.5;
+  }to{
+    opacity: 1;
+  }
+}
+
+.sub-caja2 {
+  width: 75%;
+  min-height: 80vh;
+  /* border: 2px solid black; */
+  margin-top: 10px;
+  margin-bottom: 25px;
+  box-shadow: 1px 1px 1px #CACACA, -1px -1px 1px #CACACA;
+  border-radius: 0px 10px 10px 10px;
+}
+
+#tituloNoticias {
+  background: #19823B;
+  width: 200px;
+  height: 40px;
+  box-shadow: 0.2px 0.2px 5px black;
+  opacity: 1;
+  border-radius: 2px;
+  margin-top: -25px;
+  margin-left: 15px;
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  animation: miAnimacion 1s;
+}
+
+
+#tituloNoticias h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  color: white;
+
+}
+ .noticias{
+  padding: 20px 0px;
+
+  animation: miAnimacion 1s;
+}
+.noticia {
+
+  padding: 20px;
+  background: rgba(240,240,240,1);
+  transition: background 0.2s;
+  animation: miAnimacion2 1s;
+
+}
+/* .noticia:hover{
+  background: #009231;
+  opacity: 0.7;
+  color: white;
+} */
+
+iframe {
+  width: 80%;
+  background: white;
+  margin: 20px;
+}
+.notice {
+  font-family:  'Raleway', sans-serif;
+  font-size:25px;
+}
+
+.fecha {
+  float: right;
+  font-family:   'Raleway', sans-serif;
+  font-weight:600;
+  font-size: 13px;
+}
+
+@media screen and (max-width:700px) {
+  .sub-caja2 {
+    width: 95%;
+  }
+}
+
+@media screen and (max-device-width:500px) {
+
+  .sub-caja2 {
+    width: 95%;
+  }
+
+  .notice {
+    font-size: 22px;
+  }
+
+  .fecha {
+    font-weight:600;
+    font-size: 10px;
+  }
+  iframe {
+    width: 100%;
+    background: white;
+    margin-top: 20px;
+    margin-left: -10px;
+  }
+}
+
+.borde-prueba{
+  border: 2px solid black;
+}
+.borde-row {
+  border: 1px solid red;
+}

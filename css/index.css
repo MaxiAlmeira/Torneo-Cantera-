@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+
+/* DEFINIMOS LAS DISTINTAS IMAGENES DE FONDO PARA LOS DISTINTOS DISPOSITIVOS */
+.pantalla_de_inicio {
+  height: 100vh;
+  background-image: url(../imagenes/HORIZONTALES/1440x900/fondoLaptopHlite1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:top;
+}
+
+
+/* DISEÑAMOS EL MENU DE NAVEGACION */

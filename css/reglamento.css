@@ -1,0 +1,105 @@
+body {
+  animation: aparecer 1s;
+}
+
+.pantalla_de_inicio{
+  height: 50vh;
+  background-image: url(../imagenes/HORIZONTALES/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:bottom;
+  box-shadow: 1px 1px 10px black;
+}
+
+.sub-caja1 {
+  width: 100%;
+  margin: auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  justify-content: center;
+}
+
+.sub-caja2 {
+  width: 75%;
+  min-height: 80vh;
+  /* border: 2px solid black; */
+  margin-top: 10px;
+  margin-bottom: 25px;
+  box-shadow: 1px 1px 1px #CACACA, -1px -1px 1px #CACACA;
+  border-radius: 0px 10px 10px 10px;
+}
+
+
+#tituloReglamento {
+  background: #19823B;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  width: 200px;
+  height: 40px;
+  box-shadow: 0.2px 0.2px 5px black;
+  opacity: 1;
+  border-radius: 2px;
+  margin-top: -25px;
+  margin-left: 15px;
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  animation: miAnimacion 1s;
+
+}
+
+.puntosDelReglamento p {
+  font-family: 'Raleway', sans-serif;
+  padding: 10px;
+  text-align: justify;
+  animation: miAnimacion 1s;
+}
+
+h4>b{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  margin: 10px 0px 10px 30px;
+}
+
+
+@media screen and (max-width:800px) {
+  .sub-caja2{
+    width: 85%;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .sub-caja2{
+    width: 97%;
+  }
+  .pantalla_de_inicio{
+    height: 25vh;
+    background-image: url(../imagenes/HORIZONTALES/banner.jpg);
+  }
+}
+
+@-webkit-keyframes miAnimacion {
+  0%{
+    transform: translateY(300%);
+  }50%{
+    transform: translateY(-5%);
+  }100%{
+    transform: translateY(-0%);
+  }
+}
+
+@-webkit-keyframes aparecer {
+  from{
+    opacity: 0.5;
+  }to{
+    opacity: 1;
+  }
+}
